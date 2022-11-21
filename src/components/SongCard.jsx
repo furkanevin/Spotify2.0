@@ -15,7 +15,10 @@ const SongCard = ({ song, i }) => {
               ? 'flex bg-black bg-opacity-70'
               : 'hidden'
           }`}
-        ></div>
+        >
+          <PlayPause />
+        </div>
+        <img src={song.images?.coverart} alt="song-img" />
       </div>
     </div>
   );
