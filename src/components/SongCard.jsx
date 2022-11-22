@@ -4,9 +4,15 @@ import PlayPause from './PlayPause';
 import { Link } from 'react-router-dom';
 
 const SongCard = ({ song, isPlaying, activeSong, data, i }) => {
-  const dispatch = useDispatch;
-  const handlePlayClick = () => {};
-  const handlePauseClick = () => {};
+  const dispatch = useDispatch();
+  const handlePlayClick = () => {
+    dispatch(setActiveSong({ song, data, i }));
+    dispatch(playPause(true));
+  };
+  const handlePauseClick = () => {
+    dispatch(playPause(false));
+  };
+
   return (
     <div className="flex flex-col w-[250px] p-4 bg-white/5 bg-opacity-80 backdrop-blur-sm animate-slideup rounded-lg cursor-pointer">
       <div className="relative w-full h-56 group">
