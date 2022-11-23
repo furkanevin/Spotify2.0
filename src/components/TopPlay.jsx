@@ -9,6 +9,17 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 const TopPlay = () => {
   const dispatch = useDispatch();
+  const { activeSong, isPlaying } = useSelector((state) => state.player);
+  const { data } = useGetTopChartsQuery();
+  const divRef = useRef(null);
+  const topPlays = data?.slice(0, 5);
+  const handlePlayClick = () => {
+    dispatch(setActiveSong({ song, data, i }));
+    dispatch(playPause(true));
+  };
+  const handlePauseClick = () => {
+    dispatch(playPause(false));
+  };
 };
 
 export default TopPlay;
