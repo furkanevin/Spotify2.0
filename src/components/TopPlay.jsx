@@ -45,7 +45,7 @@ const TopChartCard = ({
       activeSong={activeSong}
       song={song}
       handlePause={handlePauseClick}
-      handlePlay={handlePlayClick}
+      handlePlay={() => handlePlayClick(song, i)}
     />
   </div>
 );
@@ -59,7 +59,7 @@ const TopPlay = () => {
     divRef.current.scrollIntoView();
   });
 
-  const topPlays = data?.slice(1, 6);
+  const topPlays = data?.slice(2, 7);
   const handlePlayClick = (song, i) => {
     dispatch(setActiveSong({ song, data, i }));
     dispatch(playPause(true));
