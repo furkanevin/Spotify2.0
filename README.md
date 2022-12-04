@@ -1,6 +1,6 @@
 | **_Information:mag:_**                                                                                                                                                                                                                                                                                   | **_Tech Stack:computer:_**                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _Feature List for Chat Application:<br>1. User Authentication: Users can securely sign up, log in, and log out using Firebase authentication.<br>2. Chat: Users can send and receive text messages in real-time via chat.<br>3. Image Sharing: Users can send images to other users in the chat.<br>4. Responsive Design: Application is optimized for all devices, with a modern, user-friendly design.<br>5. Emojis: Users can add emojis to their messages to express themselves better.<br>6. Search: Users can search for other users<br>Online-Preview: https://chaad.netlify.app/<br>After signing up you can search for users "Jeff,Olivia,Getir,Noah.." and send  a message_ |__<a target="blank" href="https://reactrouter.com/en/main/start/overview"> ReactRouter </a> <br> <a target="blank" href="https://sass-lang.com/guide"> SCSS </a> <br> <a target="blank" href="https://firebase.google.com/"> Firebase </a>__ |
+| _Feature List:<br>1. User Authentication: Play/pause functionality for songs.<br>2. Search bar for easily finding specific tracks<br>3.Lyrics display for singing along to songs.<br>4. Shuffle and repeat options for non-linear listening<br>5. Equalizer settings for customizing sound quality.<br>6.Album artwork display for visual enjoyment<br>Online-Preview: https://chaad.netlify.app/<br>_ |__<a target="blank" href="https://reactrouter.com/en/main/start/overview"> ReactRouter </a> <br> <a target="blank" href="https://swiperjs.com/react"> Swiper </a> <br> <a target="blank" href="https://react-redux.js.org"> React-Redux </a><br> <a target="blank" href="https://redux-toolkit.js.org"> Redux-Toolkit </a><br> <a target="blank" href="https://vitejs.dev/"> VITE </a>__ |
 
 
 <h1>Preview</h1>
@@ -17,7 +17,7 @@ Open the terminal and type
  
 After the installation, type
 
- ### `npm start`
+ ### `npm run dev`
 
 
 </div>
